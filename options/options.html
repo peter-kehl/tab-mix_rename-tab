@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="options.css"/>
+  </head>
+
+  <body>
+    <section class="panel-section panel-section-header browser-style">
+      <label class="text-section-header" i18n="options_header_title :"></label>
+    </section>
+    <section class="panel-section panel-section-list browser-style">
+      <input id="title_from_bookmark" type="checkbox" checked="true"/>
+      <label for="title_from_bookmark" i18n="options_title_from_bookmark"></label>
+
+      <input id="save_with_sessions" type="checkbox" checked="true"/>
+      <label for="save_with_sessions" i18n="options_save_with_sessions"></label>
+
+      <input id="show_in_context_menu" type="checkbox" checked="true"/>
+      <label for="show_in_context_menu"
+             i18n="options_show_in_context_menu [context_menu_rename_tab]">
+      </label>
+    </section>
+
+    <section class="contribute-box">
+      <button class="contribute">Contribute</button>
+    </section>
+
+    <!--
+    <script type=module src="options.js"></script>
+    -->
+    <script src="../background_scripts/common.js"></script>
+    <script src="../background_scripts/storage.js"></script>
+    <script src="options.js"></script>
+  </body>
+
+</html>

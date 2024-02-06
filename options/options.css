@@ -1,0 +1,26 @@
+
+input[type="checkbox"] + label {
+  font-size: 1.25em;
+  height: 30px;
+  margin: 2px 0;
+}
+
+.contribute-box {
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+  padding-top: 16px;
+  margin-top: -6px;
+}
+
+.contribute {
+  --contribute-color: #26cc96;
+  border: 2px solid var(--contribute-color);
+  border-radius: 2px;
+  color: var(--contribute-color);
+  font-size: 16px;
+  padding: 4px 20px;
+}
+
+.contribute:hover {
+  background-color: var(--contribute-color);
+  color: #fff;
+}

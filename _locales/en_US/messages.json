@@ -1,0 +1,56 @@
+{
+  "context_menu_rename_tab": {
+    "description": "context menu item to rename tab",
+    "message": "Rename Tab"
+  },
+  "description": {
+    "description": "Note: this cannot be longer than 132 characters",
+    "message": "Provides a simple interface to change tab title, and option to use bookmark name as tab title."
+  },
+  "name": {
+    "message": "Tab Mix - Rename Tab"
+  },
+  "options_header_title": {
+    "message": "Options"
+  },
+  "options_title_from_bookmark": {
+    "message": "Use bookmark name as tab title"
+  },
+  "options_save_with_sessions": {
+    "message": "Save user title between sessions"
+  },
+  "options_show_in_context_menu": {
+    "description": "Note: $menu$ will be replaced with the label from 'context_menu_rename_tab'",
+    "message": "Show '$menu$' in tab context menu",
+    "placeholders": {
+      "menu": {
+        "content": "$1"
+      }
+    }
+  },
+  "panel_button_accept": {
+    "message": "Done"
+  },
+  "panel_button_cancel": {
+    "message": "Cancel"
+  },
+  "panel_button_reset": {
+    "message": "Reset Title"
+  },
+  "panel_default_title": {
+    "message": "Default"
+  },
+  "panel_error_msg": {
+    "description": "Error message that will show when trying to rename restricted url",
+    "message": "Renaming tab with the current address is not allowed"
+  },
+  "panel_header_title": {
+    "message": "Edit Tab Title"
+  },
+  "panel_permanently_checkbox": {
+    "message": "Rename this tab regardless to its address"
+  },
+  "panel_title_field": {
+    "message": "Title"
+  }
+}

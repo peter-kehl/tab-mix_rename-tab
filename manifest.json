@@ -1,0 +1,47 @@
+{
+  "manifest_version": 2,
+  "name": "__MSG_name__",
+  "version": "1.0.2",
+  "applications": {
+    "gecko": {
+      "id": "rename_tab@tabmixplus.org"
+    }
+  },
+  "default_locale": "en_US",
+  "description": "__MSG_description__",
+  "icons": {
+    "32": "icons/rename_icon.png"
+  },
+  "permissions": [
+    "<all_urls>",
+    "activeTab",
+    "bookmarks",
+    "contextMenus",
+    "sessions",
+    "storage",
+    "tabs"
+  ],
+  "background": {
+    "page": "background_scripts/background.html"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content_scripts/content.js"
+      ],
+      "run_at": "document_start"
+    }
+  ],
+  "browser_action": {
+    "default_icon": "icons/rename_icon.svg",
+    "browser_style": true,
+    "default_title": "Rename Tab"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "browser_style": true
+  }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="renameTab.css">
+</head>
+
+<body>
+  <div id="panel" class="panel container">
+    <label id="error-msg" class="panel-section"></label>
+    <div id="header" class="panel-header">
+      <label i18n="panel_header_title"></label>
+    </div>
+    <div>
+      <img id="icon" class="panel-icon" />
+    </div>
+    <div class="panel-image-box">
+      <div id="panelImage" class="panel-image"></div>
+    </div>
+
+    <div class="panel-section panel-section-formElements browser-style">
+      <label for="title-field" i18n="panel_title_field :"></label>
+      <input class="panel-formElements-item" id="title-field" type="text" name="title">
+
+      <label id="default-label" for="default-title" i18n="panel_default_title :"></label>
+      <input class="panel-formElements-item" id="default-title" type="text" name="default" disabled="true">
+
+      <div class="panel-checkbox">
+        <input id="permanently" type="checkbox" name="permanently" checked>
+        <label for="permanently" i18n="panel_permanently_checkbox"></label>
+      </div>
+
+    </div>
+
+    <div class="panel-section panel-section-footer panel-bottom-buttons">
+      <div id="updateButton" class="panel-section-footer-button default" i18n="panel_button_accept">
+      </div>
+      <div id="resetButton" class="panel-section-footer-button" i18n="panel_button_cancel">
+      </div>
+    </div>
+  </div>
+  <!--
+  <script type=module src="renameTab.js"></script>
+  -->
+  <script src="../background_scripts/common.js"></script>
+  <script src="renameTab.js"></script>
+</body>
+
+</html>
